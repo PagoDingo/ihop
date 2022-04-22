@@ -9,6 +9,10 @@
     <!-- Animate CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--Animate CSS-->
+
+    <!-- FONT 'Melanie'-->
+    <link href="http://fonts.cdnfonts.com/css/melanie-2" rel="stylesheet">
+    <!---->
     <title>Document</title>
     <style>
         ::-webkit-scrollbar {
@@ -17,6 +21,11 @@
 
         body {
             margin: 0;
+        }
+        h1 {
+            font-size: 50px;
+            font-family: 'Melanie', sans-serif;
+            text-shadow: 10px 10px 10px rgb(0 0 0 / 0.2);
         }
 
         .fade-in {
@@ -118,35 +127,7 @@
 
 
         /***********************************************/
-        .cyan-1 {
-            width: 300px;
-            height: 300px;
-            background: lightcyan;
-        }
 
-        .cyan-2 {
-            width: 300px;
-            height: 300px;
-            background: lightcyan;
-        }
-
-        .cyan-3 {
-            width: 300px;
-            height: 300px;
-            background: lightcyan;
-        }
-
-        .cyan-4 {
-            width: 300px;
-            height: 300px;
-            background: lightcyan;
-        }
-
-        .cyan-5 {
-            width: 300px;
-            height: 300px;
-            background: lightcyan;
-        }
 
         /***********************************************/
         .circle {
@@ -155,29 +136,18 @@
             width: 100px;
             height: 100px;
             transition: .8s;
-        }
-
-        .circle:hover {
+            position: absolute;
+            display: flex; justify-content: center; align-items: center;
+        } .circle:hover {
             transform: scale(1.3);
+        } .circle-pan {
+            display: flex;align-items: center;
         }
 
         .slogan {
-            background: lightsalmon;
             margin: 10px;
-            border: 5px solid white;
-            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            color: white;
-        }
-
-        .slogan-nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            display: flex; justify-content: start; align-items: center;
+            color: whitesmoke;
         }
 
         .ihop-logo-background {
@@ -202,8 +172,24 @@
         }
 
         .pan {
-            width: 100px;
-            height: 100px;
+            width: 100px; height: 100px;
+            margin-top: 10px; margin-right: 25px;
+        }
+
+        .buffet {
+            width: 200px; height: 200px;
+        }
+
+        .utensils {
+            width: 100px; height: 100px;
+        }
+
+        .breakfast-display {
+            width: 100px; height: 100px
+        }
+
+        .placemat {
+            width: 120px; height: 120px;
         }
     </style>
 </head>
@@ -213,6 +199,7 @@
         <img class="ihop-logo animate__animated animate__flipInX"
             src="https://media.wired.com/photos/59324b5126780e6c04d2ac09/master/w_1600%2Cc_limit/ihope-orig-inline.jpg"
             alt="">
+        <img class="fade-in" src="utensils.png" alt="utensils">
     </div>
     <div class="blue-main">
         <div class="blue-main-col cyan-1 fade-in">
@@ -220,27 +207,36 @@
         </div>
         <div class="blue-main-col cyan-2 fade-in">
             <div class="circle circle-pan">
-                <img class="pan" src="pan.png" alt="">
-                <b class="tooltip">hover over me here 
-                    <span>This is a simple tooltip</span> </b>
             </div>
         </div>
         <div class="blue-main-col cyan-3 fade-in">
-            <div class="circle"></div>
+            <div class="placemat-container">
+                <img class="placemat" src="placemat.png" alt="placemat">
+            </div>
         </div>
         <div class="blue-main-col cyan-4 fade-in">
-            <div class="circle"></div>
+            <div class="circle">
+                <img class="buffet" src="buffet-1.png" alt="#">
+            </div>
         </div>
         <div class="blue-main-col cyan-5 fade-in">
-            <div class="circle"></div>
-        </div>
-        <!--<div class="slogan">
-            <div class="slogan-nav">
-                <h3>Check-in</h3>
-                <h3>Check-out</h3>
-                <h3>Order</h3>
+            <div class="circle">
+                <img class="pan" src="pan-2.png" alt="pan">
             </div>
-        </div>-->
+        </div>
+        <div class="blue-main-col cyan-5 fade-in">
+            <div class="placemat">
+                <img class="buffet" src="buffet-1.png" alt="pan">
+            </div>
+        </div>
+        <div class="slogan">
+            <h1>
+                welcome in.
+            </h1>
+        </div>
+        <div class="placemat-container">
+            <img class="placemat" src="placemat.png" alt="placemat">
+        </div>
     </div>
 </body>
 
